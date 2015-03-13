@@ -14,7 +14,7 @@ password.rmempty = false
 
 ipaddr = section:taboption("general", Value, "ipaddr", translate("IPv4 address"))
 ipaddr.datatype = "ip4addr"
-ipaddr.rmempty * false
+ipaddr.rmempty = false
 
 netmask = section:taboption("general", Value, "netmask", translate("IPv4 netmask"))
 netmask.datatype = "ip4addr"
