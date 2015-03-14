@@ -25,10 +25,9 @@ netmask:value("255.0.0.0")
 gateway = section:taboption("general", Value, "gateway", translate("IPv4 gateway"))
 gateway.datatype = "ip4addr"
 
-defaultroute = section:taboption("advanced", Flag, "defaultroute",
+section:taboption("advanced", Flag, "defaultroute",
         translate("Use default gateway"),
         translate("If unchecked, no default route is configured"))
-defaultroute.default = defaultroute.enabled
 
 mtu = section:taboption("advanced", Value, "mtu", translate("Override MTU"))
 mtu.placeholder = "1440"
