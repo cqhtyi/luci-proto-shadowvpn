@@ -1,6 +1,6 @@
 local netmod = luci.model.network
 local interface = luci.model.network.interface
-local proto = netmod:register_protocol("shadowvpn")
+local proto = netmod:register_protocol("svpn")
 
 function proto.get_i18n(self)
 	return luci.i18n.translate("ShadowVPN")
@@ -11,7 +11,7 @@ function proto.ifname(self)
 end
 
 function proto.opkg_package(self)
-	return "ShadowVPN"
+	return "shadowvpn"
 end
 
 function proto.is_installed(self)
